@@ -19,15 +19,25 @@ class MyAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                News newsFragment = new News();
-                return newsFragment;
+                MyNews myNewsFragment = new MyNews();
+                return myNewsFragment;
             case 1:
                 MyMap myMapFragment = new MyMap();
                 return myMapFragment;
             case 2:
                 MySettings mySettingsFragment = new MySettings();
                 return mySettingsFragment;
-            default:
+            case 3:
+                MySOS mySOSFragment = new MySOS();
+                return mySOSFragment;
+            case 4:
+                MyTraffic myTrafficFragment = new MyTraffic();
+                return myTrafficFragment;
+            case 5:
+                MyWeather myWeatherFragment = new MyWeather();
+                return myWeatherFragment;
+
+                default:
                 return null;
         }
     }

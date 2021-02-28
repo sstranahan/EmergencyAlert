@@ -15,6 +15,8 @@ public class MySettings extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_my_settings, container, false);
+
+
     }
 
 }
