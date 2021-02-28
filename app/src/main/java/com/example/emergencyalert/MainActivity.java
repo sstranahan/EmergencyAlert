@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity{
     static int googleAvail;
     private FusedLocationProviderClient fusedLocationClient;
     private LocationRequest mLocationRequest;
-    LatLng latLng;
+    public static LatLng latLng;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -209,4 +209,7 @@ public class MainActivity extends AppCompatActivity{
                 });
     }
 
+    public static LatLng getLatLng() {
+        return latLng;
+    }
 }
